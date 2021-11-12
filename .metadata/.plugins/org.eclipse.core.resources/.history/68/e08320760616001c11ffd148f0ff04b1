@@ -1,0 +1,5 @@
+package com.info.boot.service;
+
+public interface IEmployeeService {
+
+}

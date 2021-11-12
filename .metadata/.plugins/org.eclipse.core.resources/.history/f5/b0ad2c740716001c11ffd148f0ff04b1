@@ -1,0 +1,12 @@
+package com.info.boot.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.info.boot.repository.EmployeeRepository;
+import com.info.boot.service.IEmployeeService;
+
+public class EmployeeServiceImpl implements IEmployeeService {
+
+	@Autowired
+	private EmployeeRepository repository;
+}

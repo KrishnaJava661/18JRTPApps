@@ -1,0 +1,16 @@
+package com.info.boot.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.info.boot.service.IEmployeeService;
+
+public class EmployeeController {
+
+	@Autowired
+	private IEmployeeService service;
+	@PostMapping
+	private int saveEmployee(@RequestBody Employee employee) {
+		service.save(employee);
+	}
+}

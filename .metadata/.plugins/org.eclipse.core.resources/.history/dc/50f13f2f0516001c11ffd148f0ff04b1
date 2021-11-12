@@ -1,0 +1,2 @@
+spring.datasource.driver-class-name=jj
+spring.datasource.driver=

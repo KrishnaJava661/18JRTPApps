@@ -1,0 +1,10 @@
+package com.info.boot.model;
+@Entity
+
+public class Employee {
+	
+	private Integer employeeId;
+	private String employeeName;
+	private Double employeeSalary;
+
+}

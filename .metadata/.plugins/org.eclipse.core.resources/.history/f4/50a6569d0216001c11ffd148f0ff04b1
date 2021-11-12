@@ -1,0 +1,13 @@
+package com.info.boot.model;
+
+import javax.persistence.Entity;
+
+@Entity
+@Table
+public class Employee {
+	
+	private Integer employeeId;
+	private String employeeName;
+	private Double employeeSalary;
+
+}

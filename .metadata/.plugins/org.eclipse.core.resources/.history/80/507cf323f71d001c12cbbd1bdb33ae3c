@@ -1,0 +1,30 @@
+package com.info.boot.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.info.boot.model.Employee;
+import com.info.boot.service.IEmployeeService;
+@RestController
+@RestMapping("/Employee")
+public class EmployeeController {
+	/*
+	@Autowired
+	private IEmployeeService service;
+	@PostMapping("/employee")
+	private int saveEmployee(@RequestBody Employee employee) {
+		service.save(employee);
+		return employee.getEmployeeId();
+	}*/
+
+@GetMapping("/fetch")
+public Employee findOneEmployee() {
+	return new Employee(10,"Sai",20000.00);
+	//return new Employee(10,"SaiNandhinie",25000.00);
+
+}
+
+}
